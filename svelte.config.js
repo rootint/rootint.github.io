@@ -14,12 +14,12 @@ const config = {
 		adapter: adapter(),
 
 		prerender: {
-			default: false
+			default: true
 		},
 
-		paths: {
-			base: dev ? '' : '/rootint.github.io'
-		},
+		// paths: {
+		// 	base: dev ? '' : '/rootint.github.io'
+		// },
 
 		// Override http methods in the Todo forms
 		methodOverride: {
