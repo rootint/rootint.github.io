@@ -9,9 +9,14 @@
 	<slot />
 </main>
 
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+<div class="footer">
+	<a href="https://github.com/rootint/">
+		<img src="github_icon.png" height="30px" width="30px" alt="github-link" /></a
+	>
+	<a href="https://t.me/RND_RandoM">
+		<img src="telegram_icon.svg" height="30px" width="30px" alt="telegram-link" /></a
+	>
+</div>
 
 <style>
 	main {
@@ -25,21 +30,11 @@
 		box-sizing: border-box;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
+	.footer {
+        /* bottom: 0; */
+		width: 100%;
+		overflow: hidden;
+		background-color: #222;
+		padding: 20px;
 	}
 </style>

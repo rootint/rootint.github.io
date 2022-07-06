@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-	import Counter from '$lib/Counter.svelte';
+	import Joke from '$lib/Joke.svelte';
 </script>
 
 <svelte:head>
@@ -12,50 +12,59 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
+	<Joke />
+	<div class="smallspacer" />
+    <img src="code.png" height=100 alt="code icon">
+	<h1>Danil Timofeev</h1>
+	<h2>I am a student at Innopolis and I love programming and design.</h2>
+    <div class="smallspacer" />
+	<a href="/projects">
+		<button class="firstbutton">Read More</button>
+	</a>
+	<div class="spacer" />
 </section>
 
 <style>
+    h1 {
+        color: var(--pure-white);
+    }
 	section {
+		margin-top: 60px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		flex: 1;
 	}
-
-	h1 {
-		width: 100%;
+	.spacer {
+		margin: 60px;
+	}
+    .smallspacer {
+		margin: 16px;
 	}
 
-	.welcome {
+	h2 {
+		text-align: center;
+		font-size: 18pt;
+	}
+	.firstbutton {
+		font-family: 'Source Code Pro';
+		border: none;
+		margin: 0 auto;
 		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		border-radius: 25px;
+		padding: 15px 30px;
+		font-size: 150%;
+		background: #0d79de;
+		cursor: pointer;
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	.firstbutton:hover {
+		background: #0d79de;
+		color: #eee;
+	}
+
+	.firstbutton:active {
+		background: #0d79de66;
 	}
 </style>

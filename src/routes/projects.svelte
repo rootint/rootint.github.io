@@ -15,27 +15,37 @@
 </script>
 
 <svelte:head>
-	<title>Abou Me</title>
-	<meta name="description" content="About Me" />
+	<title>About</title>
+	<meta name="description" content="About this app" />
 </svelte:head>
 
 <div class="content">
-    <h1>About Me</h1>
-    <img src="me.png" width=200 alt="myface">
+	<h1>My Projects</h1>
 	<p style="color: #fff">
-        I have a lot of hobbies, like solving the Rubik's Cube, playing the
-        piano, writing music and sleeping:)<br /><br />
-        Furthermore, I am extremely fond of Mobile Development, I know Flutter
-        pretty well and currently learning SwiftUI. <br /><br />
-        I also particularly enjoy playing badminton.
-      </p>
+		<a href="https://github.com/orgs/InnoSWP/projects/9">ReusEd Learning</a>
+		- a project that we are doing with my fantastic team at Innopolis.
+	</p>
+	<div class="spacer" />
+	<h2>
+		Unfortunately, I don't have many projects now.<br /> However, you can always come up to me and suggest
+		something super cool, I would not be against.
+	</h2>
 </div>
 
 <style>
+	h2 {
+		font-style: italic;
+	}
 	.content {
-        text-align: center;
+		text-align: center;
 		width: 100%;
 		max-width: var(--column-width);
 		margin: var(--column-margin-top) auto 0 auto;
+	}
+	.spacer {
+		margin: 50px;
+	}
+	.smallspacer {
+		margin: 16px;
 	}
 </style>
