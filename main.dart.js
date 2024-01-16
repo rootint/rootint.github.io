@@ -81684,7 +81684,10 @@ $2(a,b){if(b===0&&this.a.a[b].a)return A.jj(A.a([new A.tu(this.a.a[b],null),new 
 return new A.tu(this.a.a[b],null)},
 $S:544}
 A.agb.prototype={
-$1(a){var s=B.c.fB(a).length===0||this.b.a[0].a,r=this.a
+$1(a){var s,r
+if(B.c.fB(a).length!==0){s=this.b.a
+s=s.length!==0&&s[0].a}else s=!0
+r=this.a
 if(s)r.ak(new A.ag8(r))
 else r.ak(new A.ag9(r))},
 $S:38}
